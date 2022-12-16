@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_0z9pgew" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.5.1" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.1.0" camunda:diagramRelationId="6ebc4093-57be-415d-b47c-4c31f0866e4e">
+  <decision id="Decision_mailformat" name="FADS_Decisiontable">
+    <decisionTable id="DecisionTable_0myfxl0">
+      <input id="InputClause_0mzdamq" label="Message Code">
+        <inputExpression id="LiteralExpression_09sffms" typeRef="string">
+          <text>messageCode</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0yzvrea" label="Recipient">
+        <inputExpression id="LiteralExpression_04l6tp1" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="OutputClause_03sg82x" label="HTML Template" name="htmlTemplate" typeRef="string" biodi:width="192" />
+      <rule id="DecisionRule_0jz2zk9">
+        <inputEntry id="UnaryTests_1y5j724">
+          <text>"PRE_INT_REV"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0bwsu0n">
+          <text>"Case_Creator"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1vtjch0">
+          <text>"1"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_13wi941">
+        <inputEntry id="UnaryTests_1og9buf">
+          <text>"PRE_INT_OPN"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ao9fqu">
+          <text>"Case_Creator"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_11i7dzp">
+          <text>"2"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0ygd4lm">
+        <inputEntry id="UnaryTests_1dyge4m">
+          <text>"PRE_INT_PDNG"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_10yosb3">
+          <text>"Case_Creator"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0yybtvu">
+          <text>"3"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Decision_mailformat">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
